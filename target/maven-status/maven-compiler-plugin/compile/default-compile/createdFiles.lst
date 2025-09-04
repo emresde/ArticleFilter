@@ -1,0 +1,13 @@
+com/example/wos/service/WosService.class
+com/example/wos/dto/RecDTO$RecDTOBuilder.class
+com/example/wos/dto/YearCountDTO.class
+com/example/wos/dto/RecDTO.class
+com/example/wos/web/WosController.class
+com/example/wos/web/SearchController.class
+com/example/wos/dto/CountDTO.class
+com/example/wos/model/WosData.class
+com/example/wos/web/StatsController.class
+com/example/wos/service/WosSearchService.class
+com/example/wos/DataApplication.class
+com/example/wos/service/StatsService.class
+com/example/wos/repo/WosRepository.class
