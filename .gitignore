@@ -1,0 +1,13 @@
+
+# Build
+target/
+build/
+# OS/IDE
+.DS_Store
+.vscode/
+.idea/
+# Logs
+logs/
+# Data files (keep folder only)
+import/*
+!import/.gitkeep
