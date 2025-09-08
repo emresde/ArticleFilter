@@ -343,4 +343,23 @@ src/main/java/com/example/wos
 └── web/              # StatsController, RepoController, WosController
 
 
-⸻
+## 📁 Veri Dosyaları (import/)
+
+Bu repo **veri dosyalarını içermez**. Her kullanıcı kendi JSON verisini **import/** klasörüne koymalı ve Docker içinden import etmelidir.
+
+1) Veri dosyanızı import klasörüne kopyalayın:
+```bash
+cp ~/Desktop/bigdata.json import/
+
+2.	MongoDB’ye içeri aktarın:
+
+docker exec -it mongo mongoimport \
+  --db appdb \
+  --collection data \
+  --file /import/bigdata.json \
+  --jsonArray
+
+Notlar:
+	•	import/ klasörü repoda vardır ama .gitignore nedeniyle içindeki JSON’lar track edilmez.
+	•	Büyük dosyaları reponuza push etmeyin (GitHub 100 MB limitine takılır).
+	•	Gerekirse veriyi bir paylaşım servisi (Drive, S3, vs.) üzerinden paylaşın.
